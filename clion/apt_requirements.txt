@@ -1,0 +1,7 @@
+bash-completion
+default-jdk
+git
+meld
+nano
+doxygen
+graphviz
