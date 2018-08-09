@@ -3,7 +3,7 @@ FROM prodromou87/llvm:7
 # Apt packages
 ADD apt_requirements.txt apt_requirements.txt
 RUN apt-get update
-RUN apt-get install -y $(grep -vE "^\s*#" apt_requirements.txt  | tr "\n" " ")
+RUN apt-get install -y $(grep -vE "^\s*#" apt_requirements.txt  | tr "\n" " ") wget
 
 # Install clion
 RUN wget https://download.jetbrains.com/cpp/CLion-2018.2.1.tar.gz -O clion.tar.gz && \
